@@ -27,10 +27,6 @@ app.get('*', (req, res) => {
 });
 
 
-// combine
-// something to return the data req
-// add the uuid to writefile
-
 app.post('/api/notes', async (req, res) => {
   const data = await readFile('./db/db.json', 'utf8')
       const parsedData = JSON.parse(data);
